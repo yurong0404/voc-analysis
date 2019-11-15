@@ -159,11 +159,11 @@ while(command != "exit"):
 		plot_bar_graph(wordcount, 0)
 	elif command == "show bigram":
 		bigram_count = ngram_frequency(article, 2)
-		print("\nBigram distribution:")
+		print("Bigram distribution:")
 		plot_bar_graph(bigram_count, 1)
 	elif command == "show trigram":
 		trigram_count = ngram_frequency(article, 3)
-		print("\nTrigram distribution:")
+		print("Trigram distribution:")
 		plot_bar_graph(trigram_count, 2)
 	elif command == "search bigram":
 		search_command = input("please give a correlation you want to search : ")
