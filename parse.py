@@ -1,8 +1,8 @@
+# if you haven't installed nltk, execute this line to install nltk
+#os.system("python3 -m pip install nltk")
+
 import nltk
 import os
-
-# if you haven't installed nltk, execute this line
-#os.system("python3 -m pip install nltk")
 
 
 '''
@@ -117,6 +117,12 @@ def plot_bar_graph(wordcount, mode):
 		print('|'+'='*int(bar_max_width*(percentWord[word]/max_percent))+'|',end=' ')
 		print(str(round(percentWord[word],2))+'%', '('+ str(wordcount[word]) +')')
 
+
+'''
+command can be two types:
+	1. "the _"
+	2. "_ the"
+'''
 def search_bigram(bigram_count, command):
 	target_bigram = dict()
 	command = command.split()
